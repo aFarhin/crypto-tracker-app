@@ -49,13 +49,13 @@ function LandingPageComponent() {
           </a>
           <RWebShare
             data={{
-              text: "Crypto Dashboard made using React JS.",
-              url: "https://crypto-dashboard-dec.netlify.app/",
-              title: "CryptoDashboard.",
+              text: "CryptoTracker, made using React JS.",
+              url: "https://crypto-tracker-app-kappa.vercel.app/",
+              title: "CryptoTracker.",
             }}
             onClick={() => console.log("shared successfully!")}
           >
-            <Button text="Share App" outlined={true} />
+            <Button text="Share" outlined={true} />
           </RWebShare>
         </motion.div>
       </div>
