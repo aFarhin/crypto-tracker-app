@@ -39,9 +39,11 @@ function Grid({ coin, delay, isWatchlistPage }) {
               if (added) {
                 removeFromWatchlist(coin.id);
                 setAdded(false);
+               
               } else {
                 addToWatchlist(coin.id);
                 setAdded(true);
+                
               }
             }}
           >
