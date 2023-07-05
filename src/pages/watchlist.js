@@ -46,6 +46,7 @@ function WatchlistPage() {
             <div style={{ height: "95vh" }}>
               <Header />
               <TabsComponent coins={myWatchlist} isWatchlistPage={true} />
+              {/* <TabsComponent coins={myWatchlist} isWatchlistPage={true} /> */}
             </div>
           )}
           

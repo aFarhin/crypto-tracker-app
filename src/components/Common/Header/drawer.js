@@ -41,7 +41,7 @@ export default function MobileDrawer() {
   return (
     <div className="drawer-wrapper">
       <MenuRoundedIcon className="link" onClick={() => setFlag(true)} />
-      <Drawer anchor={"right"} open={flag} onClose={() => setFlag(false)}>
+      <Drawer anchor={"left"} open={flag} onClose={() => setFlag(false)}>
         <div className="mobile-drawer">
           <a href="/">
             <p className="link">Home</p>

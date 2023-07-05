@@ -32,7 +32,7 @@ function CoinPage() {
     setLoading(true);
     const data = await getCoinData(id);
     if (data) {
-      coinObject(setCoin, data); //For Coin Obj being passed in the List
+      coinObject(setCoin, data); 
       const prices = await getCoinPrices(id, days, priceType);
       if (prices) {
         settingChartData(setChartData, prices, data);

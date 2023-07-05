@@ -12,25 +12,43 @@ function LandingPageComponent() {
       <div className="landing-left">
         <motion.h1
           className="heading-1"
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
+          initial={{ opacity: 0.8, x: 30 }}
+          animate={{ opacity: 1, x: 0.8 }}
+          // transition={{ duration: 0.5 }}
+          transition={{
+            type: "smooth",
+            repeatType: "mirror",
+            duration: 2,
+            repeat: Infinity,
+          }}
         >
           Track Crypto
         </motion.h1>
         <motion.h1
           className="heading-2"
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.1 }}
+          initial={{ opacity: 0.8, x: 30 }}
+          animate={{ opacity: 1, x: 0.8 }}
+          // transition={{ duration: 0.5, delay: 0.1 }}
+          transition={{
+            type: "smooth",
+            repeatType: "mirror",
+            duration: 2,
+            repeat: Infinity,
+          }}
         >
           Real Time.
         </motion.h1>
         <motion.p
           className="para"
-          initial={{ opacity: 0, x: 50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
+          initial={{ opacity: 1, x: 30 }}
+          animate={{ opacity: 1, x: 1 }}
+          // transition={{ duration: 0.5, delay: 0.2 }}
+          transition={{
+            type: "smooth",
+            repeatType: "mirror",
+            duration: 2,
+            repeat: Infinity,
+          }}
         >
           Track crypto through a public api in real time. Visit the dashboard to
           do so!
@@ -40,11 +58,12 @@ function LandingPageComponent() {
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 0.5 }}
+         
         >
           <a href="/Dashboard">
             <Button text="Dashboard"
             onClick={() => {
-              console.log("btn-clicked!!!");
+              console.log("btn-clicked!!!"); 
             }} />
           </a>
           <RWebShare

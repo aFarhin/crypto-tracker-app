@@ -31,6 +31,7 @@ function SelectDays({ days, handleDaysChange, noText }) {
         <MenuItem value={60}>60 Days</MenuItem>
         <MenuItem value={90}>90 Days</MenuItem>
         <MenuItem value={120}>120 Days</MenuItem>
+        <MenuItem value={365}>1 Year</MenuItem>
       </Select>
     </div>
   );

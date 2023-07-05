@@ -23,12 +23,12 @@ function List({ coin, delay, isWatchlistPage }) {
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5, delay: delay }}
       >
-        <Tooltip placement="bottom-start" title="Image">
+        <Tooltip placement="bottom-start" title="logo">
           <td className="td-img">
             <img src={coin.image} className="coin-image" />
           </td>
         </Tooltip>
-        <Tooltip placement="bottom-start" title="Info">
+        <Tooltip placement="bottom-start" title="Coin info">
           <td className="td-info-flex">
             <div className="coin-name-flex">
               <h3 className="coin-symbol coin-symbol-list">{coin.symbol}</h3>
@@ -36,7 +36,7 @@ function List({ coin, delay, isWatchlistPage }) {
             </div>
           </td>
         </Tooltip>
-        <Tooltip placement="bottom-start" title="Price">
+        <Tooltip placement="bottom-start" title="Price change percentage">
           <td className="td-price-chip-list">
             {coin.price_change_percentage_24h > 0 ? (
               <div className="info-flex" style={{ marginBottom: 0 }}>
@@ -78,7 +78,7 @@ function List({ coin, delay, isWatchlistPage }) {
             </p>
           </td>
         </Tooltip>
-        <Tooltip placement="bottom-start" title="Total Volume">
+        <Tooltip placement="bottom-start" title="Total coin volume">
           <td className="td-mkt-cap">
             <span className="coin-total_volume">
               {coin.total_volume.toLocaleString()}
